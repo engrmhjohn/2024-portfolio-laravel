@@ -1,0 +1,19 @@
+@font-face {
+    font-family: exo_kohinoor_regular;
+    src: url(../fonts/exo_kohinoor/KohinoorExo-Regular.ttf);
+}
+
+@font-face {
+    font-family: exo_kohinoor_medium;
+    src: url(../fonts/exo_kohinoor/KohinoorExo-Medium.ttf);
+}
+
+@font-face {
+    font-family: exo_kohinoor_semibold;
+    src: url(../fonts/exo_kohinoor/KohinoorExo-Semibold.ttf);
+}
+
+@font-face {
+    font-family: exo_kohinoor_bold;
+    src: url(../fonts/exo_kohinoor/KohinoorExo-Bold.ttf);
+}

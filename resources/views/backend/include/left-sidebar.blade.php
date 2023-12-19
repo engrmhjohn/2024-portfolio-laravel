@@ -28,7 +28,7 @@
             @if( Auth::user()->role == '1' || Auth::user()->role == '2')
             <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="zmdi zmdi-apps"></i><span>Content Manage</span></a>
                 <ul class="ml-menu" style="display: none;">
-                    <li><a href="" class=" waves-effect waves-block">Add Pages</a></li>
+                    <li><a href="{{ route('admin.manage_menu') }}" class=" waves-effect waves-block">Manage Menu</a></li>
                 </ul>
             </li>
             @if( Auth::user()->role == '2')
