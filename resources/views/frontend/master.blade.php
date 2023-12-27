@@ -52,9 +52,25 @@
 
 <body>
 
-    <div id="loader-wrapper">
+    {{-- <div id="loader-wrapper">
         <div id="loader"></div>
-    </div>
+    </div> --}}
+
+    		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
 
     @include('frontend.include.header')
 
@@ -388,13 +404,13 @@
     <script src="{{ asset('frontAssets') }}/js/script.js"></script>
     <script src="{{ asset('frontAssets') }}/js/custom.js"></script>
 
-    <script>
+    {{-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 document.querySelector("body").classList.add("loaded");
             }, 10)
         });
-    </script>
+    </script> --}}
     <script>
         function openNav() {
             document.getElementById("mySidepanel").style.width = "90%";

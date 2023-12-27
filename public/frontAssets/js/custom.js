@@ -45,5 +45,10 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
-
+	/*====================
+		Preloader JS
+	======================*/
+	$(window).on('load', function() {
+		$('.preloader').addClass('preloader-deactivate');
+	});
 
