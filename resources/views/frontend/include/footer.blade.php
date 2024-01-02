@@ -12,7 +12,7 @@
         </div>
 
         <div class="container text-center">
-            <p class="copyright">&copy; Mehedi Hasan John - 2023
+            <p class="copyright">&copy; Mehedi Hasan John - 2024
             </p>
         </div>
 
