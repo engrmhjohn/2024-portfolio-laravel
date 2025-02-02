@@ -56,27 +56,45 @@
         <div id="loader"></div>
     </div> --}}
 
-    		<!-- Preloader -->
-        <div class="preloader">
-            <div class="loader">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
 
-                <div class="indicator"> 
-                    <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                    </svg>
-                </div>
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
             </div>
         </div>
-        <!-- End Preloader -->
+    </div>
+    <!-- End Preloader -->
 
     @include('frontend.include.header')
 
     @yield('content')
 
     @include('frontend.include.footer')
+
+    <!-- Chat Widget Toggle Button -->
+    <div id="chat-widget" class="wow zoomIn" data-wow-delay="0.1s">
+        <button id="toggle-button" onclick="toggleChat()">
+            <i class="fa fa-comments"></i>
+        </button>
+
+        <!-- Chat options -->
+        <div id="chat-options" class="chat-options">
+            <a href="https://www.youtube.com/@OneSkyCommunicationsltd" target="_blank" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/yt.jpg" alt="Social Logo"> </a>
+            <a href="https://www.linkedin.com/company/one-sky-communications-limited" target="_blank" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/linkedin.jpg" alt="Social Logo"> </a>
+            <a href="https://goo.gl/maps/qx6HwDyZJL4hnpuV8" target="_blank" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/maps.jpg" alt="Social Logo"> </a>
+            <a href="mailto:info@ositbd.com" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/mail.jpg" alt="Social Logo"> </a>
+            <a href="tel:+8801404090700" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/call.jpg" alt="Social Logo"> </a>
+            <a href="https://m.me/OneSky.ISP" target="_blank" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/messenger.jpg" alt="Social Logo"> </a>
+            <a href="https://wa.me/+8801404090700" target="_blank" class="chat-option"> <img class="img-fluid" src="{{ asset('frontEndAssets') }}/img/wa.jpg" alt="Social Logo"> </a>
+                    </div>
+    </div>
 
     <!-- Modals -->
     <div id="personal_information" class="modal fade fade-scale" role="dialog">
@@ -419,30 +437,12 @@
         function closeNav() {
             document.getElementById("mySidepanel").style.width = "0";
         }
+
     </script>
-    <!--Start whatsapp chat plugin -->
-    <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-733754a7-dfa6-4452-9dbe-090544a1dd62" data-elfsight-app-lazy></div> -->
-    <!--End whatsapp chat plugin -->
 
     <!-- Template Javascript -->
     <script src="{{ asset('frontEndAssets') }}/js/main.js"></script>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/6576ae4d07843602b80060c8/1hhbpho40';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
 
 </body>
 
